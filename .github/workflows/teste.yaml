@@ -1,8 +1,8 @@
-name: Teste on PR
-	
+name: Test on PR
+
 on:
-	pull_request:
-		branches: [master]
+  pull_request:
+    branches: [master]
 		
 jobs:
 	teste:
