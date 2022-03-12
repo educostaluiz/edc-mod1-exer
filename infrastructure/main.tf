@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "datalake" {
  #     }
  #   }
  # }
-
+ 
 
   tags = {
     IES   = "IGTI"
@@ -25,6 +25,6 @@ resource "aws_s3_bucket_object" "codigo_spark" {
   key    = "emr-code/pyspark/job_from_tf.py"
   acl    = "private"
   source  = "job_emr.py"
-  etag   = filemd5("job_emr.py")
+  etag   = filemd5("job_spark.py")
 
 }
