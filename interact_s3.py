@@ -22,3 +22,5 @@ s3_client.download_file("datalake-educosta-igti-edc", "dms/public/login_ast/LOAD
 
 df = pd.read_csv("dms/public/login_ast/LOAD00000001.csv",sep=",",encoding='latin1')
 print(df)
+
+#s3_client.upload_file("data/pnadc20203.csv",  "datalake-ney-igti-edc", "data/pnadc20203.csv")
