@@ -25,7 +25,6 @@ EOF
 }
 
 
-
 resource "aws_iam_policy" "lambda" {
   name        = "IGTIAWSLambdaBasicExecutionRolePolicy"
   path        = "/"
