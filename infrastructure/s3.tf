@@ -5,13 +5,13 @@ resource "aws_s3_bucket" "dl" {
     CURSO = "EDC"
   }
 
- # server_side_encryption_configuration {
- #   rule {
- #     apply_server_side_encryption_by_default {
- #       sse_algorithm = "AES256"
- #     }
- #   }
- # }
+  # server_side_encryption_configuration {
+  #   rule {
+  #     apply_server_side_encryption_by_default {
+  #       sse_algorithm = "AES256"
+  #     }
+  #   }
+  # }
 }
 
 
@@ -24,11 +24,11 @@ resource "aws_s3_bucket" "stream" {
     CURSO = "EDC"
   }
 
- # server_side_encryption_configuration {
- #   rule {
- #     apply_server_side_encryption_by_default {
+  # server_side_encryption_configuration {
+  #   rule {
+  #     apply_server_side_encryption_by_default {
   #      sse_algorithm = "AES256"
   #    }
   #  }
- #}
+  #}
 }
