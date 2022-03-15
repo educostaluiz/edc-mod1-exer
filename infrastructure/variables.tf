@@ -1,12 +1,19 @@
-variable "base_bucket_name" {
-  default = "datalake-igti-tf"
+variable "aws_region" {
+  default = "us-east-2"
 }
-variable "ambiente" {
-  default = "producao"
+
+variable "lambda_function_name" {
+  default = "IGTIexecutaEMRaovivo"
 }
-variable "numero_conta" {
-  default = "611727732233"
+
+variable "key_pair_name" {
+  default = "edu-igti-teste"
 }
-provider "aws" {
-  region = "us-east-2"
+
+variable "airflow_subnet_id" {
+  default = "subnet-4cef5427"
+}
+
+variable "vpc_id" {
+  default = "vpc-d724b4bc"
 }
