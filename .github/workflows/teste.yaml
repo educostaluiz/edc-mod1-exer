@@ -5,7 +5,7 @@ on:
 
 jobs:
   test:
-    name: Test infra on PR
+    name: Teste Infra on PR
     runs-on: ubuntu-latest
 
 
