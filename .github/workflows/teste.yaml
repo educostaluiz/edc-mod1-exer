@@ -1,5 +1,4 @@
 name: Teste On PR
-
 on:
   pull_request:
     branches: [master]
