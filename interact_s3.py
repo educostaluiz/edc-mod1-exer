@@ -5,9 +5,9 @@ import pandas as pd
 
 s3_client = boto3.client('s3')
 
-s3_client.download_file("datalake-educosta-igti-edc", "data/ITENS_PROVA_2019.csv", "data/ITENS_PROVA_2019.csv")
+#s3_client.download_file("datalake-educosta-igti-edc", "data/ITENS_PROVA_2019.csv", "data/ITENS_PROVA_2019.csv")
 #s3_client.download_file("datalake-educosta-igti-edc", "data/MICRODADOS_ENEM_2019.csv", "data/MICRODADOS_ENEM_2019.csv")
-s3_client.download_file("datalake-educosta-igti-edc", "dms/public/login_ast/LOAD00000001.csv", "dms/public/login_ast/LOAD00000001.csv")
+#s3_client.download_file("datalake-educosta-igti-edc", "dms/public/login_ast/LOAD00000001.csv", "dms/public/login_ast/LOAD00000001.csv")
 
 
 #df = pd.read_csv("data/ITENS_PROVA_2019.csv",sep=";", encoding='latin1')
@@ -20,7 +20,7 @@ s3_client.download_file("datalake-educosta-igti-edc", "dms/public/login_ast/LOAD
 #print(dados.loc[(dados['NO_MUNICIPIO_RESIDENCIA']=='Belo horizonte')&(dados['NO_MUNICIPIO_PROVA']=='Recife')])
 
 
-df = pd.read_csv("dms/public/login_ast/LOAD00000001.csv",sep=",",encoding='latin1')
-print(df)
+#df = pd.read_csv("dms/public/login_ast/LOAD00000001.csv",sep=",",encoding='latin1')
+#print(df)
 
-#s3_client.upload_file("data/pnadc20203.csv",  "datalake-ney-igti-edc", "data/pnadc20203.csv")
+s3_client.upload_file("data/MICRODADOS_ENEM_2020.csv",  "datalake-edu-igti-edc", "raw-data/enem/MICRODADOS_ENEM_2020.csv")
