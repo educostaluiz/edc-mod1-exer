@@ -78,6 +78,7 @@ resource "aws_iam_role_policy_attachment" "lambda_attach" {
 ## KINESIS ##
 #############
 
+
 # resource "aws_iam_policy" "firehose" {
 #   name        = "IGTIFirehosePolicy"
 #   path        = "/"
