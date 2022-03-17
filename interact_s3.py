@@ -23,5 +23,4 @@ s3_client = boto3.client('s3')
 #df = pd.read_csv("dms/public/login_ast/LOAD00000001.csv",sep=",",encoding='latin1')
 #print(df)
 
-
-s3_client.upload_file("data/MICRODADOS_ENEM_2020.csv",  "datalake-edu-igti-edc", "raw-data/enem/MICRODADOS_ENEM_2020.csv")
+s3_client.upload_file("data/MICRODADOS_ENEM_2020.csv",  "datalake-educosta-igti-edc", "raw-data/enem/MICRODADOS_ENEM_2020.csv")
